@@ -1,0 +1,74 @@
+<html>
+<style>
+    body {
+        background-color: #F6F6F6;
+        color: #DE1B1B;
+    }
+    .boxed {
+        border: 18px solid #2B2B2B;
+        padding: 25px;
+        margin: 25px;
+    }
+</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="css/death.css" rel="stylesheet">
+</head>
+
+<body>
+    <br><br><br>
+    <h1>Press "_" to start</h1>
+    <br>
+    
+<script>
+	//no scoring system
+
+    //var score = localStorage.getItem('score');
+
+    //if (!localStorage.getItem("highScore"))
+    //   localStorage.getItem("highScore") = 0;
+    //if (!localStorage.getItem("highScoreName"))
+    //   localStorage.getItem("highScoreName") = "Nobody";
+    
+    //if (score > parseInt(localStorage.getItem("highScore"))) {
+    //    var name = prompt("You got the high score! Enter your name:"," "); 
+    //    localStorage.setItem("highScoreName", name + " : ");
+    //    localStorage.setItem("highScore", score);
+    //}
+    
+    //if (localStorage.getItem('deathCause'))
+    //    document.write('<H1>' + 
+    //    'You were killed by: ' + localStorage.getItem('deathCause')
+    //    + '</H1>');
+	//	document.write('<H1>' + 
+    //    'Your score was: ' + score
+    //    + '</H1>');
+    
+    //no scoring system
+    //document.write("<H1> <centered> " + "HIGHSCORE" + "</centered> </H1>");
+    //document.write("<H1> <centered> " + localStorage.getItem('highScoreName') + localStorage.getItem('highScore') + "</centered> </H1>");
+    
+	document.onkeydown = checkKey;
+	document.onkeypress = checkKey;
+	function checkKey(e) {
+		if (e.keyCode == 32){
+			window.location = "main.html";	
+		}
+		if (e.keyCode == 27){
+			window.location = "start.html";	
+		}
+		//if (e.keyCode == 13){
+		//	window.location = "hardmode.html";	
+		//}
+	}
+</script>
+    <br>
+    <br> <br>
+    <!--<div class="boxed">-->
+        <p>Blocked</p>
+        <p>A puzzle game that hopefully means a bit more</p>
+        <p>By: Daoxu Ye and Jake O'Rielly</p>
+    <!--</div>-->
+    <br>
+</body>
+</html>
